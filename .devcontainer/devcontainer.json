@@ -1,0 +1,21 @@
+{
+  "name": "physics ex",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": "latest"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "KevinRose.vsc-python-indent",
+        "formulahendry.code-runner",
+        "oderwat.indent-rainbow",
+        "GitHub.copilot",
+        "ms-toolsai.jupyter-keymap",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "pip3 install jupyter",
+  "runArgs": ["--name", "programming_ex"]
+}
